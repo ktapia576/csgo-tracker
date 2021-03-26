@@ -16,9 +16,9 @@ router.get('/:profileIdentifier', async (req, res) => {
 
         res.send(response.data);
     } catch (err) {
-        console.error(err);
-        res.status(500).json({
-            message: 'Server Error'
+        // err.response.data for message from API
+        res.status(404).json({
+            message: 'Profile not found!'
         });
     }
 });
