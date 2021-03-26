@@ -7,6 +7,9 @@ dotenv.config({ path: './config.env'});
 
 const app = express();
 
+// Profile routes
+app.use('/api/v1/profile/steam', require('./routes/profile'))
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
