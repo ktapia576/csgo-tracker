@@ -1,4 +1,4 @@
-# csgo-tracker
+# CS:GO Tracker
 A repo for a web app to show player stats for a searched player in CSGO while using Vue.js as Front End
 
 # Live Demo
